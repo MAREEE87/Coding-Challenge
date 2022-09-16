@@ -9,9 +9,9 @@
 }
 
 .battery-status {
-  border-radius: 3px;
+  border-radius: 0.2em;
   height: 1.8em;
-  margin-top: 5px;
+  margin-top: 0.5em;
 }
 
 .battery-status-low {
@@ -60,13 +60,15 @@ nav {
   text-align: center;
 }
 
+/* NOTE: we could have specified it through main>section, but it would be less robust in case we'd
+    want to add some other vehicle, let's say <section class="bike">...</> */
 .scooter {
   color: var(--theme-text-main);
-  margin-top: 5%;
+  margin-top: 1.5em;
 }
+
 /* NOTE: we could have specified it through section>label, but it would be less robust in case we'd
     want to add some other nested labels with different characteristics. */
-
 .scooter-label {
   font-size: 1.2em;
   font-weight: bold;
